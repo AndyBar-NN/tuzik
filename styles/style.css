@@ -39,17 +39,7 @@ h3 {
   width: 100%;
   margin: auto;
 }
-.header,
-.header-top,
-.header-top_user,
-.header-bottom,
-.header-bottom_nav,
-.slide,
-.slide-info,
-.subscription,
-.subscription-block,
-footer,
-.footer-block {
+.block-flex {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -58,14 +48,19 @@ footer,
 .header {
   height: 140px;
 }
-.header-top_link {
+.header-top__link {
   max-width: 120px;
   width: 100%;
 }
-.header-top_user {
+.header-top__user {
   margin-left: 20px;
 }
-.header-top_user--link {
+.header-top__user--link:not(:last-child) {
+  max-width: 100%;
+  width: 40px;
+  margin-right: 20px;
+}
+.header-top__user--img:not(:last-child) {
   max-width: 100%;
   width: 40px;
   margin-right: 20px;
@@ -114,11 +109,11 @@ footer,
 .slide-info {
   justify-content: space-around;
 }
-.slide-info_img {
+.slide-info__img {
   width: 100%;
   max-width: 290px;
 }
-.slide-info_desc {
+.slide-info__desc {
   text-align: center;
 }
 .btn-tomato {
@@ -144,7 +139,7 @@ footer,
   justify-content: space-between;
   flex-wrap: wrap;
 }
-.products-list_item {
+.products-list__item {
   max-width: 300px;
   width: 100%;
   margin-top: 30px;
@@ -153,10 +148,10 @@ footer,
   border-bottom-left-radius: 7px;
   border-bottom-right-radius: 7px;
 }
-.products-list_item h3 {
+.products-list__item h3 {
   margin: 7px 0;
 }
-.products-list_item p {
+.products-list__item p {
   margin: 17px 0;
 }
 .btn-white,
@@ -189,22 +184,22 @@ footer,
   width: 100%;
   margin: auto;
 }
-.subscription-block_img {
+.subscription-block__img {
   max-width: 135px;
   width: 100%;
 }
-.subscription-block_form {
+.subscription-block__form {
   padding: 20px 30px;
   background: var(--color-lime);
 }
-.subscription-block_form h3 {
+.subscription-block__form h3 {
   margin-top: 0;
 }
 input[type="email"] {
   font-size: 16px;
   padding: 12px;
 }
-.subscription-block_form .btn-form {
+.subscription-block__form .btn-form {
   float: right;
   font-size: 16px;
   padding: 12px;
@@ -217,11 +212,14 @@ footer {
 .footer-block {
   height: 160px;
 }
-.footer-social_fb,
-.footer-social_yb,
-.footer-social_ig {
+.footer-social__link:not(:last-child) {
+  margin-right: 15px;
+}
+.footer-social__fb,
+.footer-social__yb,
+.footer-social__ig {
   width: 30px;
 }
-.footer-contact_tel {
+.footer-contact__tel {
   margin-right: 20px;
 }
