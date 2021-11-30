@@ -25,14 +25,17 @@ h3 {
 :root {
   --color-light: #F3F3F3;
   --color-lime: #A5BE00;
-  --color-dark: #FF8C42;
+  --color-orange: #FF8C42;
   --color-tomato: #CB4646;
-  --color-dark: #393939;
+  --color-dark: #949494;
+  --color-grey: #c4c4c4;
+  --color-black: #171717;
 }
 .btn {
   width: 100%;
   max-width: 230px;
   padding: 15px;
+  cursor: pointer;
 }
 .container {
   max-width: 1140px;
@@ -97,12 +100,11 @@ h3 {
   width: 200px;
   top: 55%;
   text-align: center;
-  background: var(--color-dark);
+  background: var(--color-black);
   color: white;
 }
 /* info */
 .slide {
-  margin-top: 60px;
   height: 450px;
   background: var(--color-light);
 }
@@ -116,13 +118,13 @@ h3 {
 .slide-info__desc {
   text-align: center;
 }
-.btn-tomato {
+.slide-info__desc .btn-dark {
   display: block;
   width: 200px;
   text-align: center;
   margin: auto;
   margin-top: 30px;
-  background: var(--color-dark);
+  background: var(--color-black);
   color: white;
 }
 /* products */
@@ -165,13 +167,13 @@ h3 {
 .btn-black {
   margin-top: 10px;
   color: white;
-  background: var(--color-dark);
-  border: 1px solid var(--color-dark);
+  background: var(--color-black);
+  border: 1px solid var(--color-black);
 }
 .btn-white {
   color: black;
   background: #fff;
-  border: 1px solid var(--color-dark);
+  border: 1px solid var(--color-black);
 }
 /* subscription */
 .subscription {
@@ -202,12 +204,13 @@ input[type="email"] {
 .subscription-block__form .btn-form {
   float: right;
   font-size: 16px;
+  font-weight: bold;
   padding: 12px;
+  background: var(--color-light);
 }
 /* footer */
 footer {
-  margin-top: 60px;
-  background: var(--color-light);
+  background: var(--color-grey);
 }
 .footer-block {
   height: 160px;
