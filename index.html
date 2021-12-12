@@ -5,8 +5,8 @@
   <meta charset="UTF-8">
   <title>Тузик</title>
   <link rel="icon" href="img/icons/logo.ico">
-  <link rel="stylesheet" href="styles/style.css">
-  <script src="js/index.js" defer></script>
+  <link rel="stylesheet" href="css/animate.css">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
@@ -14,21 +14,15 @@
   <header>
     <div class="block-flex container header">
       <div class="block-flex header-top">
-        <a class="header-top__link" href="index.html"><img src="img/icons/logo.svg" alt=""></a>
+        <a class="header-top__logo" href="index.html"><img src="img/icons/logo.svg" alt=""></a>
         <span>Дома которые нравятся нашим животным!</span>
       </div>
       <div class="block-flex header-top">
-        <a href="tel:89001234455">8-900-123-44-55</a>
-        <div class="block-flex header-top__user">
-          <a class="header-top__user--link" href="#!">
-            <img class="header-top__user--img" src="img/icons/user.svg" alt="">
-          </a>
-          <a class="header-top__user--link" href="#!">
-            <img class="header-top__user--img" src="img/icons/heart.svg" alt="">
-          </a>
-          <a class="header-top__user--link" href="#!">
-            <img class="header-top__user--img" src="img/icons/cart.svg" alt="">
-          </a>
+        <a class="link-green" href="tel:89001234455">8-900-123-44-55</a>
+        <div class="block-flex header-top__links">
+          <a class="header-top__link header-top__link--user" href="#!"></a>
+          <a class="header-top__link header-top__link--heart" href="#!"></a>
+          <a class="header-top__link header-top__link--cart" href="#!"></a>
         </div>
       </div>
     </div>
@@ -121,8 +115,8 @@
     <div class="container">
       <div class="block-flex footer-block">
         <div class="footer-contact">
-          <a class="footer-contact__tel" href="tel:89001234455">8-900-123-44-55</a>
-          <a class="footer-contact__mail" href="mailto:Tuzik@gmail.com">Tuzik@gmail.com</a>
+          <a class="link-green footer-contact__tel" href="tel:89001234455">8-900-123-44-55</a>
+          <a class="link-green footer-contact__mail" href="mailto:Tuzik@gmail.com">Tuzik@gmail.com</a>
         </div>
 
         <div class="footer-social">
@@ -136,6 +130,8 @@
     </div>
   </footer>
 
+  <script src="js/jquery-3.6.0.min.js"></script>
+  <script src="js/wow.min.js"></script>
+  <script src="js/index.js"></script>
 </body>
-
 </html>
