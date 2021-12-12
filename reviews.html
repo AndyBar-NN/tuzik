@@ -5,9 +5,9 @@
   <meta charset="UTF-8">
   <title>Отзывы</title>
   <link rel="icon" href="img/icons/logo.ico">
-  <link rel="stylesheet" href="styles/style.css">
-  <link rel="stylesheet" href="styles/reviews.css">
-  <script src="js/index.js" defer></script>
+  <link rel="stylesheet" href="css/animate.css">
+  <link rel="stylesheet" href="css/reviews.css">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
@@ -15,21 +15,15 @@
   <header>
     <div class="block-flex container header">
       <div class="block-flex header-top">
-        <a class="header-top__link" href="index.html"><img src="img/icons/logo.svg" alt=""></a>
+        <a class="header-top__logo" href="index.html"><img src="img/icons/logo.svg" alt=""></a>
         <span>Дома которые нравятся нашим животным!</span>
       </div>
       <div class="block-flex header-top">
-        <a href="tel:89001234455">8-900-123-44-55</a>
-        <div class="block-flex header-top__user">
-          <a class="header-top__user--link" href="#!">
-            <img class="header-top__user--img" src="img/icons/user.svg" alt="">
-          </a>
-          <a class="header-top__user--link" href="#!">
-            <img class="header-top__user--img" src="img/icons/heart.svg" alt="">
-          </a>
-          <a class="header-top__user--link" href="#!">
-            <img class="header-top__user--img" src="img/icons/cart.svg" alt="">
-          </a>
+        <a class="link-green" href="tel:89001234455">8-900-123-44-55</a>
+        <div class="block-flex header-top__links">
+          <a class="header-top__link header-top__link--user" href="#!"></a>
+          <a class="header-top__link header-top__link--heart" href="#!"></a>
+          <a class="header-top__link header-top__link--cart" href="#!"></a>
         </div>
       </div>
     </div>
@@ -48,8 +42,9 @@
   </header>
 
   <main class="container">
+
     <div class="block-flex leave-review">
-      <div class="leave-review__button">
+      <div class="leave-review__button wow bounce">
         <img class="leave-review__img" src="img/dog-review.png" alt="">
         <button class="btn btn-form">Оставить отзыв</button>
       </div>
@@ -57,7 +52,7 @@
     </div>
 
     <div class="review-list">
-      <div class="review-item">
+      <div class="review-item wow fadeInRight">
         <p class="review-item__name">Иван Федорович Крузенштерн</p>
         <div class="review-item__block">
           <p class="review-item__block--text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, est?
@@ -73,21 +68,41 @@
     <div class="container">
       <div class="block-flex footer-block">
         <div class="footer-contact">
-          <a class="footer-contact__tel" href="tel:89001234455">8-900-123-44-55</a>
-          <a class="footer-contact__mail" href="mailto:Tuzik@gmail.com">Tuzik@gmail.com</a>
+          <a class="link-green footer-contact__tel" href="tel:89001234455">8-900-123-44-55</a>
+          <a class="link-green footer-contact__mail" href="mailto:Tuzik@gmail.com">Tuzik@gmail.com</a>
         </div>
 
         <div class="footer-social">
-          <a class="footer-social__link" href="https://www.facebook.com/"><img class="footer-social__fb" src="img/icons/fb.svg" alt="facebook"></a>
-          <a class="footer-social__link" href="https://www.youtube.com/"><img class="footer-social__yb" src="img/icons/youtube.svg"
-              alt="youtube"></a>
-          <a class="footer-social__link" href="https://www.instagram.com/"><img class="footer-social__ig" src="img/icons/inst.svg"
-              alt="instagram"></a>
+          <a class="footer-social__link" href="https://www.facebook.com/"><img class="footer-social__fb"
+              src="img/icons/fb.svg" alt="facebook"></a>
+          <a class="footer-social__link" href="https://www.youtube.com/"><img class="footer-social__yb"
+              src="img/icons/youtube.svg" alt="youtube"></a>
+          <a class="footer-social__link" href="https://www.instagram.com/"><img class="footer-social__ig"
+              src="img/icons/inst.svg" alt="instagram"></a>
         </div>
       </div>
     </div>
   </footer>
 
-</body>
+  <div class="modal-container">
+    <div class="modal-review">
+      <div class="modal-review__title">
+        <p>Написать отзыв</p>
+        <div class="modal-exit"></div>
+      </div>
+      <form method="post" action="">
+        <input class="modal-form" type="text" name="" placeholder="Имя">
+        <input class="modal-form" type="email" name="" placeholder="Электронная почта">
+        <input class="modal-form" type="text" name="" placeholder="Название товара">
+        <input class="modal-form" type="text" name="" placeholder="Отзыв">
+      </form>
+      <button class="btn btn-green" type="button">Отправить</button>
+    </div>
+  </div>
 
+  <script src="js/jquery-3.6.0.min.js"></script>
+  <script src="js/scrollNot.js"></script>
+  <script src="js/wow.min.js"></script>
+  <script src="js/index.js"></script>
+</body>
 </html>
