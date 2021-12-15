@@ -4,7 +4,9 @@
 <head>
   <meta charset="UTF-8">
   <title>Тузик</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" href="img/icons/logo.ico">
+  <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/news.css">
   <script src="js/index.js" defer></script>
 </head>
@@ -14,21 +16,15 @@
   <header>
     <div class="block-flex container header">
       <div class="block-flex header-top">
-        <a class="header-top__link" href="index.html"><img src="img/icons/logo.svg" alt=""></a>
+        <a class="header-top__logo" href="index.html"><img src="img/icons/logo.svg" alt=""></a>
         <span>Дома которые нравятся нашим животным!</span>
       </div>
       <div class="block-flex header-top">
-        <a href="tel:89001234455">8-900-123-44-55</a>
-        <div class="block-flex header-top__user">
-          <a class="header-top__user--link" href="#!">
-            <img class="header-top__user--img" src="img/icons/user.svg" alt="">
-          </a>
-          <a class="header-top__user--link" href="#!">
-            <img class="header-top__user--img" src="img/icons/heart.svg" alt="">
-          </a>
-          <a class="header-top__user--link" href="#!">
-            <img class="header-top__user--img" src="img/icons/cart.svg" alt="">
-          </a>
+        <a class="link-green" href="tel:89001234455">8-900-123-44-55</a>
+        <div class="block-flex header-top__links">
+          <a class="header-top__link header-top__link--user" href="#!"></a>
+          <a class="header-top__link header-top__link--heart" href="#!"></a>
+          <a class="header-top__link header-top__link--cart" href="#!"></a>
         </div>
       </div>
     </div>
@@ -38,7 +34,7 @@
         <nav class="block-flex header-bottom__nav">
           <li><a href="#!">Наши магазины</a></li>
           <li><a href="#!">О нас</a></li>
-          <li><a href="news.html">Статьи</a></li>
+          <li><a href="news.html">Новости</a></li>
           <li><a href="#!">Доставка</a></li>
           <li><a href="reviews.html">Отзывы</a></li>
         </nav>
@@ -58,7 +54,7 @@
             </div>
             <div class="news-item">
               <span class="title-news">
-                <h3>Кричащий заголовок ААААААААААААААААА<br>ААААААААААААА
+                <h3>Кричащий заголовок ААААААААААА&shy;АААААА&shy;АААААА&shy;ААААААА
                 </h3>
               </span>
               <a class="btn btn-black" href="#!">Подробнее</a>
@@ -72,7 +68,7 @@
             </div>
             <div class="news-item">
               <span class="title-news">
-                <h3>Кричащий заголовок ААААААААААААААААА<br>ААААААААААААА
+                <h3>Кричащий заголовок ААААААААААА&shy;АААААА&shy;АААААА&shy;ААААААА
                 </h3>
               </span>
               <a class="btn btn-black" href="#!">Подробнее</a>
@@ -88,7 +84,7 @@
         </div>
       <h1>Забота о питомцах</h1>
       <div class="article">
-        <div class="article-block block-flex">
+        <div class="article-block block-flex img-l">
           <img src="img/dognews.png" alt="">
           <div class="article-box">
             <h2 class="title">Правильное питание для собак и кошек</h2>
@@ -100,7 +96,7 @@
               дом, милый дом! </span>
           </div>
         </div>
-        <div class="article-block block-flex">
+        <div class="article-block block-flex img-r">
           <div class="article-box">
             <h2 class="title">Правильное питание для собак и кошек</h2>
             <span class="text">Дом, милый дом! дом, милый дом! дом, милый дом! дом, милый дом!
@@ -112,7 +108,7 @@
           </div>
           <img src="img/dogsnews.png" alt="">
         </div>
-        <div class="article-block block-flex">
+        <div class="article-block block-flex img-l">
           <img src="img/cat-l.png" alt="">
           <div class="article-box">
             <h2 class="title">Правильное питание для собак и кошек</h2>
@@ -124,7 +120,7 @@
               дом, милый дом! </span>
           </div>
         </div>
-        <div class="article-block block-flex">
+        <div class="article-block block-flex img-r">
           <div class="article-box">
             <h2 class="title">Правильное питание для собак и кошек</h2>
             <span class="text">Дом, милый дом! дом, милый дом! дом, милый дом! дом, милый дом!
@@ -151,15 +147,15 @@
 
         <div class="footer-social block-flex">
           <a class="footer-social__link" href="https://www.facebook.com/"><img class="footer-social__fb" src="img/icons/fb.svg" alt="facebook"></a>
-          <a class="footer-social_link" href="https://www.youtube.com/"><img class="footer-social__yb" src="img/icons/youtube.svg"
+          <a class="footer-social__link" href="https://www.youtube.com/"><img class="footer-social__yb" src="img/icons/youtube.svg"
               alt="youtube"></a>
-          <a class="footer-social_link" href="https://www.instagram.com/"><img class="footer-social__ig" src="img/icons/inst.svg"
+          <a class="footer-social__link" href="https://www.instagram.com/"><img class="footer-social__ig" src="img/icons/inst.svg"
               alt="instagram"></a>
         </div>
       </div>
     </div>
   </footer>
-
-</body>
-
+  <script src="js/jquery-3.6.0.min.js"></script>
+  <script src="js/wow.min.js"></script>
+  </body>
 </html>
