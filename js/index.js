@@ -20,8 +20,3 @@ modal.addEventListener('click', (e) => {
 
 btnForm.addEventListener('click', modalToggle);
 modalExit.addEventListener('click', modalToggle);
-
-
-$(function () {
-  new WOW().init();
-});

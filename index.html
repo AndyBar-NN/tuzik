@@ -3,15 +3,30 @@
 
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Тузик</title>
   <link rel="icon" href="img/icons/logo.ico">
-  <link rel="stylesheet" href="css/animate.css">
+  <link rel="stylesheet" href="css/slick.css">
+  <link rel="stylesheet" href="css/slick-theme.css">
   <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
 
   <header>
+    <div class="header-mobile">
+      <div class="container">
+        <nav class="header-mobile__nav">
+          <a href="#!">Наши магазины</a>
+          <a href="#!">О нас</a>
+          <a href="news.html">Статьи</a>
+          <a href="#!">Доставка</a>
+          <a href="reviews.html">Отзывы</a>
+          <a href="tel:89001234455">8-900-123-44-55</a>
+        </nav>
+      </div>
+    </div>
+
     <div class="block-flex container header">
       <div class="block-flex header-top">
         <a class="header-top__logo" href="index.html"><img src="img/icons/logo.svg" alt=""></a>
@@ -25,6 +40,8 @@
           <a class="header-top__link header-top__link--cart" href="#!"></a>
         </div>
       </div>
+
+      <div class="header-menu__burger"></div>
     </div>
 
     <div class="block-flex header-bottom">
@@ -41,9 +58,21 @@
   </header>
 
   <main>
-    <div class="container slider-top">
-      <h1>Скидка на розовые домики только до 5 декабря!</h1>
-      <a class="btn btn-dark" href="#!">Купить</a>
+    <div class="container slider">
+      <div class="slider-top slider-top__cats-rose">
+        <h1>Скидка на розовые домики только до 5 декабря!</h1>
+        <a class="btn btn-dark" href="#!">Купить</a>
+      </div>
+
+      <div class="slider-top slider-top__dogs">
+        <h1>Порадуй питомца! К новому году скидки на новые домики для собак!</h1>
+        <a class="btn btn-dark" href="#!">Купить</a>
+      </div>
+
+      <div class="slider-top slider-top__cats">
+        <h1>При покупке кошачьих домиков корм со вкусом нового года в подарок!</h1>
+        <a class="btn btn-dark" href="#!">Купить</a>
+      </div>
     </div>
 
     <div class="block-flex slide">
@@ -131,7 +160,8 @@
   </footer>
 
   <script src="js/jquery-3.6.0.min.js"></script>
-  <script src="js/wow.min.js"></script>
-  <script src="js/index.js"></script>
+  <script src="js/slick.min.js"></script>
+  <script src="js/main.js"></script>
+
 </body>
 </html>
