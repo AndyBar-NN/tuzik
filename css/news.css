@@ -1,17 +1,4 @@
-/* /* * {
-    box-sizing: border-box;
-  }
-  body {
-    margin: 0;
-    font-size: 16px;
-    font-family: "Roboto", sans-serif;
-  }
-  a {
-    text-decoration: none;
-    color: black;
-    cursor: url('../img/cursor.png'),
-    auto;
-  } */
+
   h1 {
     margin: 90px 0px;
   }
@@ -20,61 +7,6 @@
     margin-bottom: 5px;
     margin-left: 20px;
   }
-  /* :root {
-    --color-light: #F3F3F3;
-    --color-lime: #A5BE00;
-    --color-orange: #FF8C42;
-    --color-tomato: #CB4646;
-    --color-dark: #393939;
-  }
-  .btn {
-    width: 100%;
-    max-width: 230px;
-    padding: 15px;
-  }
-  .container {
-    max-width: 1140px;
-    width: 100%;
-    margin: auto;
-  }
-  .block-flex {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  } */
-  /* header-top */
-  /* .header {
-    height: 140px;
-  }
-  .header-top__link {
-    max-width: 120px;
-    width: 100%;
-  }
-  .header-top__user {
-    margin-left: 20px;
-  }
-  .header-top__user--link:not(:last-child) {
-    max-width: 100%;
-    width: 40px;
-    margin-right: 20px;
-  }
-  .header-top__user--img:not(:last-child) {
-    max-width: 100%;
-    width: 40px;
-    margin-right: 20px;
-  }
-  /* header-bottom */
-  /* .header-bottom {
-    height: 60px;
-    background: var(--color-lime);
-  }
-  .header-bottom li {
-    list-style: none;
-    color: white;
-  }
-  .header-bottom a {
-    color: white;
-  }  */
   /* news */
   .grid-news{
     display: grid;
@@ -142,29 +74,7 @@
     font-size: 30px;
     margin-bottom: 90px;
   }
-  /* footer */
-/* footer {
-    margin-top: 60px;
-    background: var(--color-light);
-  }
-  .footer-block {
-    height: 160px;
-  }
-  .footer-social{
-   width: 115px;
-  }
-  /* .footer-social__link:not(:last-child) {
-    margin-right: 15px;
-  }
-  .footer-social__fb,
-  .footer-social__yb,
-  .footer-social__ig {
-    width: 30px;
-  } */
-  /* .footer-contact__tel {
-    margin-right: 20px;
-  }
-  */ 
+
   /* tablet 320px */
   @media screen and (max-width: 320px) {
     h2 {

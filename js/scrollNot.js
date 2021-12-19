@@ -4,12 +4,11 @@ window.disableScroll = function () {
   document.body.dbscrollY = window.scrollY;
   headElem.style.cssText = `padding-right: ${widthScroll}px;`;
   document.body.style.cssText = `
-    position: fixed;
+    position: absolute;
     top: ${-window.scrollY}px;
     left: 0;
     width: 100%;
     overflow: hidden;
-    height: 100vh;
     padding-right: ${widthScroll}px;
   `;
 };
