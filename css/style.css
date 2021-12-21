@@ -78,10 +78,11 @@ li {
 .header-top__logo {
   max-width: 120px;
   width: 100%;
+  margin-right: 20px;
   z-index: 7;
 }
 .header-top__links {
-  margin-left: 20px;
+  margin-left: 50px;
   z-index: 7;
 }
 .header-top__link:not(:last-child) {
@@ -133,16 +134,19 @@ li {
 /* banners */
 .slider-top__cats-rose {
   height: 450px;
-  background: url('../img/slide.jpg') no-repeat;
-  background-position: center -220px;
+  background: linear-gradient(rgba(0, 0, 0, 0.5) 100%, #000 100%),
+  url('../img/slide.jpg') no-repeat;
+  background-position: center;
 }
 .slider-top__cats {
   height: 450px;
-  background: url('../img/slide-3.jpg') no-repeat center;
+  background: linear-gradient(rgba(0, 0, 0, 0.5) 100%, #000 100%),
+  url('../img/slide-3.jpg') no-repeat center;
 }
 .slider-top__dogs {
   height: 450px;
-  background: url('../img/slide-2.jpg') no-repeat;
+  background: linear-gradient(rgba(0, 0, 0, 0.5) 100%, #000 100%),
+  url('../img/slide-2.jpg') no-repeat;
   background-position: bottom;
 }
 .slider-top {
@@ -150,12 +154,16 @@ li {
   display: flex !important;
   flex-direction: column;
   justify-content: end;
+  z-index: 11;
 }
 .slider-top__dogs h1 {
-  color: var(--color-green);
+  color: var(--color-lime);
 }
 .slider-top__cats h1 {
   color: var(--color-orange);
+}
+.slider-top__cats-rose h1 {
+  color: var(--color-light);
 }
 .btn-dark {
   display: block;
@@ -199,6 +207,8 @@ li {
  width: 95%;
 }
 .products h2 {
+  margin-top: 60px;
+  margin-bottom: 30px;
   text-align: center;
   margin-bottom: 0;
 }
@@ -297,7 +307,7 @@ footer {
   margin-right: 20px;
 }
 /* adaptiv */
-@media (max-width: 770px) {
+@media (max-width: 840px) {
   h1 {
     font-size: 24px;
   }
