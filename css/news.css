@@ -10,8 +10,7 @@
   /* news */
   .grid-news{
     display: grid;
- 
-    height: 500px;
+    min-height: 500px;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(2, 1fr);
     column-gap: 15px;
@@ -24,6 +23,7 @@
   display: grid;
   grid-template-rows: auto;
   background: var(--color-light);
+  min-height: 200px;
   }
   .title-news{
     width: 300px;
@@ -49,7 +49,7 @@
   .article-block{
     width: 100%;
     max-width: 1080px;
-    height: 270px;
+    min-height: 270px;
     margin: auto;
     margin-bottom: 60px;
   }
@@ -58,12 +58,14 @@
   }
   .article-box{
     width: 660px;
-    height: 250px;
+    min-height: 250px;
     background: var(--color-light);
+  }
+  .title{
+    margin-bottom: 24px;
   }
   .text{
     display: block;
-    font-size: 16px;
     margin-left: 35px;
     line-height: 1.5;
     color: var(--color-black);
@@ -77,19 +79,12 @@
 
   /* tablet 320px */
   @media screen and (max-width: 320px) {
-    h2 {
-      font-size: 16px;
-    }
-    .container {
-      width: 87.5%;
-      margin: auto;
-    }
-    .grid-news{
+    .grid-news {
       height: auto;
       grid-template-columns: 1fr;
       grid-template-rows: repeat(6, 1fr);
-    }
-    .title-news{
+   }
+    .title-news {
       width: 75%;
     }
     .img-news{
@@ -125,5 +120,27 @@
       height: auto;
       font-size: 16px;
       padding: 15px;
+    }
+  }
+  @media (min-device-width: 321px)
+    and (max-device-width: 870px){
+    .title-news{
+      width: 75%;
+    }
+    .img-news{
+      height: auto;
+      width: 75%;
+    }
+    .btn-black {
+      width: 80%;
+    }
+    .article{
+      display: grid;
+      grid-template-columns: 100%;
+      grid-template-rows: repeat(4, 1fr);
+    }
+    .article-block img{
+      width: 45%;
+      margin: 0 20px;
     }
   }
