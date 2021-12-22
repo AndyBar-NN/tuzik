@@ -12,8 +12,7 @@ img {
 a {
   text-decoration: none;
   color: black;
-  cursor: url('../img/cursor.png'),
-  auto;
+  cursor: url("../img/cursor.png"), auto;
 }
 h1 {
   font-size: 48px;
@@ -28,22 +27,21 @@ li {
   list-style: none;
 }
 :root {
-  --color-light: #F3F3F3;
-  --color-lime: #A5BE00;
-  --color-orange: #FF8C42;
-  --color-tomato: #CB4646;
+  --color-light: #f3f3f3;
+  --color-lime: #a5be00;
+  --color-orange: #ff8c42;
+  --color-tomato: #cb4646;
   --color-dark: #949494;
   --color-grey: #c4c4c4;
   --color-black: #171717;
-  --color-yellow: #FBD824;
+  --color-yellow: #fbd824;
   --color-green: #679436;
 }
 .btn {
   width: 100%;
   max-width: 230px;
   padding: 15px;
-  cursor: url('../img/cursor.png'),
-  auto;
+  cursor: url("../img/cursor.png"), auto;
 }
 .container {
   max-width: 1140px;
@@ -91,30 +89,30 @@ li {
 .header-top__link--user {
   width: 30px;
   height: 34px;
-  background: url('../img/icons/user.svg') no-repeat;
+  background: url("../img/icons/user.svg") no-repeat;
 }
 .header-top__link--user:hover {
   transition: 0.3s;
-  background: url('../img/icons/user-hover.svg') no-repeat;
+  background: url("../img/icons/user-hover.svg") no-repeat;
 }
 .header-top__link--heart {
   width: 33px;
   height: 34px;
-  background: url('../img/icons/heart.svg') no-repeat;
+  background: url("../img/icons/heart.svg") no-repeat;
 }
 .header-top__link--heart:hover {
   transition: 0.3s;
-  background: url('../img/icons/heart-hover.svg') no-repeat;
+  background: url("../img/icons/heart-hover.svg") no-repeat;
 }
 .header-top__link--cart {
   max-width: 100%;
   width: 31px;
   height: 34px;
-  background: url('../img/icons/cart.svg') no-repeat;
+  background: url("../img/icons/cart.svg") no-repeat;
 }
 .header-top__link--cart:hover {
   transition: 0.3s;
-  background: url('../img/icons/cart-hover.svg') no-repeat;
+  background: url("../img/icons/cart-hover.svg") no-repeat;
 }
 .header-mobile {
   display: none;
@@ -133,16 +131,16 @@ li {
 /* banners */
 .slider-top__cats-rose {
   height: 450px;
-  background: url('../img/slide.jpg') no-repeat;
+  background: url("../img/slide.jpg") no-repeat;
   background-position: center -220px;
 }
 .slider-top__cats {
   height: 450px;
-  background: url('../img/slide-3.jpg') no-repeat center;
+  background: url("../img/slide-3.jpg") no-repeat center;
 }
 .slider-top__dogs {
   height: 450px;
-  background: url('../img/slide-2.jpg') no-repeat;
+  background: url("../img/slide-2.jpg") no-repeat;
   background-position: bottom;
 }
 .slider-top {
@@ -165,7 +163,7 @@ li {
   background: var(--color-black);
   color: white;
 }
-.btn-dark:hover{
+.btn-dark:hover {
   background: #000;
   color: #fff;
 }
@@ -195,8 +193,8 @@ li {
 }
 /* products */
 .products {
- max-width: 720px;
- width: 95%;
+  max-width: 720px;
+  width: 95%;
 }
 .products h2 {
   text-align: center;
@@ -236,7 +234,7 @@ li {
   background: var(--color-black);
   border: 1px solid var(--color-black);
 }
-.btn-black:hover{
+.btn-black:hover {
   background: #000;
   color: #fff;
 }
@@ -331,12 +329,11 @@ footer {
     height: 3px;
     background-color: var(--color-orange);
     border: none;
-    cursor: url('../img/cursor.png'),
-    auto;
+    cursor: url("../img/cursor.png"), auto;
     z-index: 2;
   }
   .header-menu__burger:before {
-    content: '';
+    content: "";
     display: block;
     position: absolute;
     top: 0;
@@ -348,7 +345,7 @@ footer {
     margin-top: -10px;
   }
   .header-menu__burger:after {
-    content: '';
+    content: "";
     display: block;
     position: absolute;
     top: 0;
@@ -394,13 +391,13 @@ footer {
     color: var(--color-light);
   }
   .header-top__link--user {
-    background: url('../img/icons/user-hover.svg') no-repeat;
+    background: url("../img/icons/user-hover.svg") no-repeat;
   }
   .header-top__link--heart {
-    background: url('../img/icons/heart-hover.svg') no-repeat;
+    background: url("../img/icons/heart-hover.svg") no-repeat;
   }
   .header-top__link--cart {
-    background: url('../img/icons/cart-hover.svg') no-repeat;
+    background: url("../img/icons/cart-hover.svg") no-repeat;
   }
   .slider {
     height: 300px;

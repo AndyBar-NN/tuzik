@@ -1,0 +1,137 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+body {
+  margin: 0;
+  font-size: 16px;
+  font-family: "Montserrat", sans-serif;
+}
+img {
+  width: 100%;
+}
+a {
+  text-decoration: none;
+  color: black;
+  cursor: url("../img/cursor.png"), auto;
+}
+h1 {
+  font-size: 48px;
+}
+h2 {
+  font-size: 36px;
+}
+h3 {
+  font-size: 24px;
+}
+
+li {
+  list-style: none;
+}
+
+:root {
+  --color-light: #f3f3f3;
+  --color-middlegray: #c4c4c4;
+  --color-darkgray: #949494;
+  --color-greenhover: #7ebe38;
+  --color-lime: #a5be00;
+  --color-green: #679436;
+  --color-dark: #ff8c42;
+  --color-lightginger: #f3a126;
+  --color-yellow: #fbd823;
+  --color-dark: #393939;
+}
+
+/* banners */
+.banner-top {
+  height: 470px;
+  background: url("../img/cat-banner-about.png") no-repeat center;
+  display: block;
+}
+
+.banner-top__title {
+  margin: 0;
+  padding-top: 72px;
+  padding-left: 45px;
+  font-weight: 600;
+  width: 575px;
+}
+
+.banner-top__text {
+  padding-top: 30px;
+  padding-left: 45px;
+  font-size: 24px;
+  width: 351px;
+}
+
+/* info */
+.slide {
+  margin-top: 60px;
+  height: 587px;
+  background: var(--color-light);
+}
+
+.slide-info__title {
+  font-weight: 500;
+  margin: 40px 0 10px;
+}
+
+.slide-info__text {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 223.5%;
+}
+
+.slide-info__img {
+  width: 100%;
+  max-width: 739px;
+}
+.slide-info__desc {
+  text-align: left;
+  margin-top: -40px;
+  margin-left: 12px;
+  width: 359px;
+}
+
+/* PARTNERSHIP */
+
+.partnership {
+  margin-bottom: 130px;
+}
+.partnership-info {
+  margin-top: 75px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  width: 760px;
+}
+.partnership-info__title {
+  font-weight: 500;
+  padding-bottom: 19px;
+}
+.partnership-info__text {
+  font-weight: 500;
+  line-height: 130%;
+  padding-bottom: 53px;
+}
+.partnership-pic {
+  display: grid;
+  height: 440px;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  column-gap: 45px;
+  row-gap: 40px;
+}
+.partnership-pic__item {
+  object-fit: contain;
+  width: 100%;
+  height: 100%;
+}
+
+.advertisement {
+  height: 177px;
+  background-color: var(--color-light);
+}
+/* adaptiv */
+@media (max-width: 770px) {
+}
