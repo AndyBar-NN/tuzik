@@ -1,129 +1,144 @@
-
-  h1 {
-    margin: 90px 0px;
-  }
-  h2 {
-    margin: 0;
-    margin-bottom: 5px;
-    margin-left: 20px;
-  }
-  /* news */
-  .grid-news{
-    display: grid;
- 
-    height: 500px;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-    column-gap: 15px;
-    row-gap: 20px;
-  }
-  .last-news{
-    grid-row: 1/3;
-  }
-  .news-item{
+h2 {
+  margin-top: 60px;
+  margin-bottom: 30px;
+}
+h3{
+  margin: 25px;
+}
+/* news */
+.grid-news{
   display: grid;
-  grid-template-rows: auto;
+  min-height: 500px;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  column-gap: 15px;
+  row-gap: 20px;
+}
+.last-news{
+  grid-row: 1/3;
+}
+.news-item{
+display: grid;
+grid-template-rows: auto;
+background: var(--color-light);
+min-height: 200px;
+}
+.title-news{
+  width: 300px;
+  margin: auto;
+  justify-self: center;
+}
+.img-news{
+  margin: auto;
+  width: 270px;
+  height: 200px;
+}
+.btn-black {
+  width: 300px;
+  margin: auto;
+  margin-bottom: 15px;
+  text-align: center;
+}
+.btn-black:hover{
+  background: #444;
+  color: #fff;
+}
+/* article */
+.article-block{
+  width: 100%;
+  max-width: 1080px;
+  min-height: 270px;
+  margin: auto;
+  margin-bottom: 60px;
+}
+.article-block img{
+  width: 360px;
+}
+.article-box{
+  width: 660px;
+  min-height: 250px;
   background: var(--color-light);
-  }
-  .title-news{
-    width: 300px;
-    margin: auto;
-    justify-self: center;
+}
+.title{
+  margin-bottom: 24px;
+}
+.text{
+  display: block;
+  margin-left: 25px;
+  line-height: 1.5;
+  color: var(--color-black);
+}
+.big-btn{
+  height: 60px;
+  width: 760px;
+  font-size: 30px;
+  margin-bottom: 90px;
+}
+
+/* tablet 320px */
+@media screen and (max-width: 320px) {
+  .grid-news {
+    height: auto;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(6, 1fr);
+ }
+  .title-news {
+    width: 75%;
   }
   .img-news{
-    margin: auto;
-    width: 270px;
-    height: 200px;
+    height: auto;
+    width: 75%;
   }
   .btn-black {
-    width: 300px;
-    margin: auto;
-    margin-bottom: 15px;
-    text-align: center;
-  }
-  .btn-black:hover{
-    background: #444;
-    color: #fff;
+    width: 80%;
   }
   /* article */
   .article-block{
-    width: 100%;
-    max-width: 1080px;
-    height: 270px;
-    margin: auto;
-    margin-bottom: 60px;
+    max-width: 270px;
+    height: auto;
+  }
+  .img-l{
+    flex-direction: column;
+  }
+  .img-r{
+    flex-direction: column-reverse;
   }
   .article-block img{
-    width: 360px;
+    width: 100%;
+    margin-bottom: 30px;
   }
   .article-box{
-    width: 660px;
-    height: 250px;
-    background: var(--color-light);
+    width: 100%;
+    height: auto;
   }
   .text{
-    display: block;
-    font-size: 16px;
-    margin-left: 35px;
-    line-height: 1.5;
-    color: var(--color-black);
+    font-size: 12px;
   }
   .big-btn{
-    height: 60px;
-    width: 760px;
-    font-size: 30px;
-    margin-bottom: 90px;
+    height: auto;
+    font-size: 16px;
+    padding: 15px;
   }
-
-  /* tablet 320px */
-  @media screen and (max-width: 320px) {
-    h2 {
-      font-size: 16px;
-    }
-    .container {
-      width: 87.5%;
-      margin: auto;
-    }
-    .grid-news{
-      height: auto;
-      grid-template-columns: 1fr;
-      grid-template-rows: repeat(6, 1fr);
-    }
-    .title-news{
-      width: 75%;
-    }
-    .img-news{
-      height: auto;
-      width: 75%;
-    }
-    .btn-black {
-      width: 80%;
-    }
-    /* article */
-    .article-block{
-      max-width: 270px;
-      height: auto;
-    }
-    .img-l{
-      flex-direction: column;
-    }
-    .img-r{
-      flex-direction: column-reverse;
-    }
-    .article-block img{
-      width: 100%;
-      margin-bottom: 30px;
-    }
-    .article-box{
-      width: 100%;
-      height: auto;
-    }
-    .text{
-      font-size: 12px;
-    }
-    .big-btn{
-      height: auto;
-      font-size: 16px;
-      padding: 15px;
-    }
+}
+@media (min-device-width: 321px)
+  and (max-device-width: 870px){
+  .title-news{
+    width: 75%;
   }
+  .img-news{
+    height: auto;
+    width: 75%;
+  }
+  .btn-black {
+    width: 80%;
+  }
+  .article{
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: repeat(4, 1fr);
+  }
+  .article-block img{
+    width: 45%;
+    margin: 0 20px;
+  }
+}
