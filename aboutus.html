@@ -14,7 +14,6 @@
         <link href="https://fonts.googleapis.com/css2?family=Darker+Grotesque
         :wght@600&family=Josefin+Sans&family=Montserrat:wght@400;500;600&display=swap"
         rel="stylesheet">
-        <script src="js/index.js" defer></script>
     </head>
 
     <body>
@@ -53,7 +52,7 @@
                 <div class="container">
                     <nav class="block-flex header-bottom__nav">
                         <li><a href="#!">Наши магазины</a></li>
-                        <li><a href="#!">О нас</a></li>
+                        <li><a href="aboutus.html">О нас</a></li>
                         <li><a href="news.html">Новости</a></li>
                         <li><a href="#!">Доставка</a></li>
                         <li><a href="reviews.html">Отзывы</a></li>
@@ -71,7 +70,7 @@
             <div class="block-flex slide">
                 <div class="block-flex container slide-info">
                     <div class="slide-info__desc">
-                        <h1 class="slide-info__title">О нас</h1>
+                        <h2 class="slide-info__title">О нас</h2>
                         <p class="slide-info__text">· Быстрорастущая, развивающаяся сеть</p>
                         <p class="slide-info__text">· Удобное расположение магазинов</p>
                         <p class="slide-info__text">· Комфортный график работы</p>
@@ -81,32 +80,35 @@
                         <p class="slide-info__text">· Компетентные консультанты в магазине</p>
                         <p class="slide-info__text">· Ответы на любые вопросы в чате на сайте или по телефону</p>
                     </div>
-                    <img class="slide-info__img" src="img/dog-about.png" alt="dog pic" height="587" />
+                    <img class="slide-info__img" src="img/dog-about.png" alt="dog pic"/>
                 </div>
             </div>
 
             <div class="container partnership">
                 <div class="partnership-info">
-                    <h1 class="partnership-info__title">Сотрудничество</h1>
-                    <p class="partnership-info__text">Господа, выбранный нами инновационный путь однозначно фиксирует необходимость приоритизации
-                    разума над эмоциями. Также как постоянное информационно-пропагандистское обеспечение нашей
-                    деятельности способствует повышению качества приоритизации разума над эмоциями. Господа,
-                    базовый вектор развития предоставляет широкие возможности для прогресса профессионального сообщества.</p>
+                    <h2 class="partnership-info__title">Сотрудничество</h2>
+                    <div class="wrap">
+                        <p class="partnership-info__text">Господа, выбранный нами инновационный путь однозначно фиксирует необходимость приоритизации
+                        разума над эмоциями. Также как постоянное информационно-пропагандистское обеспечение нашей
+                        деятельности способствует повышению качества приоритизации разума над эмоциями. Господа,
+                        базовый вектор развития предоставляет широкие возможности для прогресса профессионального сообщества.</p>
+                    </div>
                 </div>
+            
                 <div class="partnership-pic">
-                    <div class="partnership-pic__object"><img class="partnership-pic__item" src="/img/apple.png" alt="apple logo"  ></div>
-                    <div class="partnership-pic__object"><img class="partnership-pic__item" src="/img/gaz.png" alt="gazprom logo"  ></div>
-                    <div class="partnership-pic__object"><img class="partnership-pic__item" src="/img/rosnano.png" alt="rosnano logo"  ></div>
-                    <div class="partnership-pic__object"><img class="partnership-pic__item" src="/img/logo_sber.png" alt="sber logo" width="300" ></div>
-                    <div class="partnership-pic__object"><img class="partnership-pic__item" src="/img/leroy.png" alt="leroy merlin logo" width="300" ></div>
-                    <div class="partnership-pic__object"><img class="partnership-pic__item" src="/img/lukoil_logo.png" alt="lukoil logo" width="300" ></div>
+                    <div class="partnership-pic__object"><img class="partnership-pic__item" src="img/apple.png" alt="apple logo"  ></div>
+                    <div class="partnership-pic__object"><img class="partnership-pic__item" src="img/gaz.png" alt="gazprom logo"  ></div>
+                    <div class="partnership-pic__object"><img class="partnership-pic__item" src="img/rosnano.png" alt="rosnano logo"  ></div>
+                    <div class="partnership-pic__object"><img class="partnership-pic__item" src="img/logo_sber.png" alt="sber logo" ></div>
+                    <div class="partnership-pic__object"><img class="partnership-pic__item" src="img/leroy.png" alt="leroy merlin logo"></div>
+                    <div class="partnership-pic__object"><img class="partnership-pic__item" src="img/lukoil_logo.png" alt="lukoil logo"></div>
                 </div>
             </div>
 
-            <div class="block-flex advertisement">
-                <div class="block-flex container advertisement-fill">
-                    <h1>Реклама</h1>
-                    <p>По вопросам рекламы обращайтесь на почту reklami.net</p>
+            <div class="block-flex marketing">
+                <div class="container marketing-fill">
+                    <h1 class="marketing_title">Реклама</h1>
+                    <p class="marketing_text">По вопросам рекламы обращайтесь на почту reklami.net</p>
                 </div>
             </div>
         </main>
@@ -129,5 +131,8 @@
                 </div>
             </div>
         </footer>
+        <script src="js/jquery-3.6.0.min.js"></script>
+        <script src="js/slick.min.js"></script>
+        <script src="js/main.js"></script>
     </body>
 </html>
