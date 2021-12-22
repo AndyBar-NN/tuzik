@@ -1,7 +1,10 @@
 $(document).ready(function () {
   $('.slider').slick({
-    // autoplay: true,
+    autoplay: true,
+    autoplaySpeed: 7000,
+    speed: 2000,
     infinite: true,
+    arrows: false,
     dots: true
   });
 });
