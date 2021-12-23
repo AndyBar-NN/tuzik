@@ -141,7 +141,6 @@
 }
 @media (max-height: 440px) {
   .modal-container {
-    position: absolute;
     align-items: start;
   }
   .modal-review form {
