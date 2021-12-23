@@ -46,6 +46,9 @@ min-height: 200px;
   color: #fff;
 }
 /* article */
+.article .block-flex {
+  align-items: flex-start;
+}
 .article-block{
   width: 100%;
   max-width: 1080px;
