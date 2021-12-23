@@ -10,7 +10,7 @@
   /* news */
   .grid-news{
     display: grid;
- 
+
     height: 500px;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(2, 1fr);
@@ -42,8 +42,9 @@
     text-align: center;
   }
   .btn-black:hover{
-    background: #444;
-    color: #fff;
+    background: var(--color-rose);
+    transition: 0.3s;
+    color: var(--color-black);
   }
   /* article */
   .article-block{
