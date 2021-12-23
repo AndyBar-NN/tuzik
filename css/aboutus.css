@@ -13,20 +13,20 @@ p{
   padding-top: 72px;
   padding-left: 45px;
   font-weight: 600;
-  max-width: 575px;
+  max-width: 600px;
 }
 
 .banner-top__text {
   padding-top: 30px;
   padding-left: 45px;
   font-size: 24px;
-  max-width: 351px;
+  max-width: 360px;
 }
 
 /* info */
 .slide {
   margin-top: 60px;
-  min-height: 587px;
+  min-height: 600px;
   height: auto;
 
 }
@@ -43,13 +43,12 @@ p{
 }
 
 .slide-info__img {
-  width: 100%;
   max-width: 600px;
 }
 .slide-info__desc {
   text-align: left;
   margin-left: 12px;
-  width: 359px;
+  width: 400px;
 }
 
 /* PARTNERSHIP */
@@ -106,4 +105,16 @@ p{
   .partnership-info {
     text-align: left;
   }
+}
+@media (max-width: 1024px){
+  .slide-info {
+    flex-wrap: wrap;
+    padding-bottom: 0;
+  }
+  .slide-info__img {
+    margin: 30px 0;
+  }
+  .partnership-info {
+    text-align: left;
+}
 }
