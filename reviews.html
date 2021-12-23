@@ -80,11 +80,37 @@
         <div class="review-item__block">
           <p class="review-item__block--text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, est?
           </p>
-          <div class="review-item__block--img"></div>
+          <!-- <div class="review-item__block--img"></div> -->
         </div>
       </div>
     </div>
 
+    <div class="review-list">
+      <div class="review-item">
+        <p class="review-item__name">Иван Васильевич Грозный</p>
+        <div class="review-item__block">
+          <p class="review-item__block--text">Иван Васильвич проявляет агрессию!
+          </p>
+          <img src="img/vanya.jpg" class="review-item__block--img">
+        </div>
+      </div>
+    </div>
+
+    <div class="modal-container">
+      <div class="modal-review">
+        <div class="modal-review__title">
+          <p>Написать отзыв</p>
+          <div class="modal-exit"></div>
+        </div>
+        <form method="post" action="">
+          <input class="modal-form" type="text" name="" placeholder="Имя">
+          <input class="modal-form" type="email" name="" placeholder="Электронная почта">
+          <input class="modal-form" type="text" name="" placeholder="Название товара">
+          <input class="modal-form" type="text" name="" placeholder="Отзыв">
+        </form>
+        <button class="btn btn-green" type="button">Отправить</button>
+      </div>
+    </div>
   </main>
 
   <footer class="block-flex">
@@ -106,22 +132,6 @@
       </div>
     </div>
   </footer>
-
-  <div class="modal-container">
-    <div class="modal-review">
-      <div class="modal-review__title">
-        <p>Написать отзыв</p>
-        <div class="modal-exit"></div>
-      </div>
-      <form method="post" action="">
-        <input class="modal-form" type="text" name="" placeholder="Имя">
-        <input class="modal-form" type="email" name="" placeholder="Электронная почта">
-        <input class="modal-form" type="text" name="" placeholder="Название товара">
-        <input class="modal-form" type="text" name="" placeholder="Отзыв">
-      </form>
-      <button class="btn btn-green" type="button">Отправить</button>
-    </div>
-  </div>
 
   <script src="js/jquery-3.6.0.min.js"></script>
   <script src="js/slick.min.js"></script>
