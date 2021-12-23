@@ -5,7 +5,6 @@ window.disableScroll = function () {
   headElem.style.cssText = `padding-right: ${widthScroll}px;`;
   document.body.style.cssText = `
     position: absolute;
-    top: ${-window.scrollY}px;
     left: 0;
     width: 100%;
     overflow: hidden;
