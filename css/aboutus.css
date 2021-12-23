@@ -1,47 +1,6 @@
-* {
-  box-sizing: border-box;
+p{
   margin: 0;
 }
-body {
-  margin: 0;
-  font-size: 16px;
-  font-family: "Montserrat", sans-serif;
-}
-img {
-  width: 100%;
-}
-a {
-  text-decoration: none;
-  color: black;
-  cursor: url("../img/cursor.png"), auto;
-}
-h1 {
-  font-size: 48px;
-}
-h2 {
-  font-size: 36px;
-}
-h3 {
-  font-size: 24px;
-}
-
-li {
-  list-style: none;
-}
-
-:root {
-  --color-light: #f3f3f3;
-  --color-middlegray: #c4c4c4;
-  --color-darkgray: #949494;
-  --color-greenhover: #7ebe38;
-  --color-lime: #a5be00;
-  --color-green: #679436;
-  --color-dark: #ff8c42;
-  --color-lightginger: #f3a126;
-  --color-yellow: #fbd823;
-  --color-dark: #393939;
-}
-
 /* banners */
 .banner-top {
   height: 470px;
@@ -54,26 +13,27 @@ li {
   padding-top: 72px;
   padding-left: 45px;
   font-weight: 600;
-  width: 575px;
+  max-width: 575px;
 }
 
 .banner-top__text {
   padding-top: 30px;
   padding-left: 45px;
   font-size: 24px;
-  width: 351px;
+  max-width: 351px;
 }
 
 /* info */
 .slide {
   margin-top: 60px;
-  height: 587px;
-  background: var(--color-light);
+  min-height: 587px;
+  height: auto;
+
 }
 
 .slide-info__title {
   font-weight: 500;
-  margin: 40px 0 10px;
+  margin-bottom: 10px;
 }
 
 .slide-info__text {
@@ -84,11 +44,10 @@ li {
 
 .slide-info__img {
   width: 100%;
-  max-width: 739px;
+  max-width: 600px;
 }
 .slide-info__desc {
   text-align: left;
-  margin-top: -40px;
   margin-left: 12px;
   width: 359px;
 }
@@ -100,14 +59,15 @@ li {
 }
 .partnership-info {
   margin-top: 75px;
-  margin-left: auto;
-  margin-right: auto;
   text-align: center;
-  width: 760px;
 }
 .partnership-info__title {
   font-weight: 500;
   padding-bottom: 19px;
+}
+.wrap{
+  max-width: 760px;
+  margin: auto;
 }
 .partnership-info__text {
   font-weight: 500;
@@ -116,7 +76,6 @@ li {
 }
 .partnership-pic {
   display: grid;
-  height: 440px;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(2, 1fr);
   column-gap: 45px;
@@ -128,10 +87,23 @@ li {
   height: 100%;
 }
 
-.advertisement {
+/* MARKETING */
+.marketing {
   height: 177px;
   background-color: var(--color-light);
 }
+.marketing-fill {
+  text-align: center;
+}
+.marketing_title {
+  font-weight: 500;
+}
+.marketing_text {
+  font-weight: 500;
+}
 /* adaptiv */
-@media (max-width: 770px) {
+@media screen and (max-width: 320px) {
+  .partnership-info {
+    text-align: left;
+  }
 }
