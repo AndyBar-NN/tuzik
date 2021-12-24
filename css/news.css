@@ -42,8 +42,9 @@ min-height: 200px;
   text-align: center;
 }
 .btn-black:hover{
-  background: #444;
-  color: #fff;
+  background: var(--color-rose);
+  transition: 0.3s;
+  color: #000;
 }
 /* article */
 .article .block-flex {
